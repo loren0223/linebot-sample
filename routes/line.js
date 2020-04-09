@@ -1382,6 +1382,291 @@ async function handleText(message, replyToken, source) {
         },
       });
 
+    case "彩妝產品":
+      return client.replyMessage(replyToken, {
+        type: "flex",
+        altText: "彩妝產品",
+        contents: {
+          type: "carousel",
+          contents: [
+            {
+              type: "bubble",
+              size: "kilo",
+              direction: "ltr",
+              hero: {
+                type: "image",
+                url:
+                  "https://www.lancome.com.tw/dw/image/v2/AAWH_PRD/on/demandware.static/-/Sites-lancome-master-catalog/zh_TW/dw4df0665a/images/PACKSHOTS/MAKEUP/FACE/TEINT%20IDOLE%20ULTRA%20WEAR%20CUSHION/4935421660068.jpg?sw=1000&sh=1000&sm=fit",
+                size: "full",
+                aspectMode: "cover",
+                aspectRatio: "320:213",
+              },
+              body: {
+                type: "box",
+                layout: "vertical",
+                contents: [
+                  {
+                    type: "box",
+                    layout: "vertical",
+                    contents: [
+                      {
+                        type: "text",
+                        text: "臉部彩妝",
+                        weight: "bold",
+                        size: "sm",
+                        wrap: true,
+                        color: "#FFFFFF",
+                      },
+                      {
+                        type: "text",
+                        text: "請選擇想要的臉部彩妝產品：",
+                        size: "xs",
+                        wrap: true,
+                        color: "#FFFFFF",
+                      },
+                    ],
+                    backgroundColor: "#D51B51",
+                    spacing: "sm",
+                    paddingAll: "10px",
+                  },
+                  {
+                    type: "box",
+                    layout: "vertical",
+                    contents: [
+                      {
+                        type: "text",
+                        text: "氣墊粉餅",
+                        align: "center",
+                        action: {
+                          type: "message",
+                          label: "氣墊粉餅",
+                          text: "氣墊粉餅",
+                        },
+                        size: "md",
+                      },
+                      {
+                        type: "text",
+                        text: "底妝/粉底/粉餅",
+                        action: {
+                          type: "message",
+                          label: "底妝/粉底/粉餅",
+                          text: "底妝/粉底/粉餅",
+                        },
+                        align: "center",
+                        size: "md",
+                      },
+                      {
+                        type: "text",
+                        text: "蜜粉/蜜粉餅",
+                        action: {
+                          type: "message",
+                          label: "蜜粉/蜜粉餅",
+                          text: "蜜粉/蜜粉餅",
+                        },
+                        align: "center",
+                        size: "md",
+                      },
+                      {
+                        type: "text",
+                        text: "檢視全部臉部彩妝",
+                        action: {
+                          type: "message",
+                          label: "檢視全部",
+                          text: "檢視全部臉部彩妝",
+                        },
+                        align: "center",
+                        size: "md",
+                      },
+                    ],
+                    spacing: "lg",
+                    margin: "lg",
+                  },
+                ],
+              },
+            },
+            {
+              type: "bubble",
+              size: "kilo",
+              direction: "ltr",
+              hero: {
+                type: "image",
+                url:
+                  "https://www.lancome.com.tw/dw/image/v2/AAWH_PRD/on/demandware.static/-/Sites-lancome-master-catalog/default/dwbddee878/medias/sys_master/root/hfc/h38/9192205320222/LORE-3614271312235-1.jpg?sw=1000&sh=1000&sm=fit",
+                size: "full",
+                aspectMode: "cover",
+                aspectRatio: "320:213",
+              },
+              body: {
+                type: "box",
+                layout: "vertical",
+                contents: [
+                  {
+                    type: "box",
+                    layout: "vertical",
+                    contents: [
+                      {
+                        type: "text",
+                        text: "眼妝",
+                        weight: "bold",
+                        size: "sm",
+                        wrap: true,
+                        color: "#FFFFFF",
+                      },
+                      {
+                        type: "text",
+                        text: "請選擇想要的眼妝產品：",
+                        size: "xs",
+                        wrap: true,
+                        color: "#FFFFFF",
+                      },
+                    ],
+                    backgroundColor: "#D51B51",
+                    spacing: "sm",
+                    paddingAll: "10px",
+                  },
+                  {
+                    type: "box",
+                    layout: "vertical",
+                    contents: [
+                      {
+                        type: "text",
+                        text: "睫毛膏",
+                        align: "center",
+                        action: {
+                          type: "message",
+                          label: "睫毛膏",
+                          text: "睫毛膏",
+                        },
+                        size: "md",
+                      },
+                      {
+                        type: "text",
+                        text: "眼影",
+                        action: {
+                          type: "message",
+                          label: "眼影",
+                          text: "眼影",
+                        },
+                        align: "center",
+                        size: "md",
+                      },
+                      {
+                        type: "text",
+                        text: "眼線液/眼線筆系列",
+                        action: {
+                          type: "message",
+                          label: "眼線液/眼線筆系列",
+                          text: "眼線液/眼線筆系列",
+                        },
+                        align: "center",
+                        size: "md",
+                      },
+                      {
+                        type: "text",
+                        text: "檢視全部眼妝",
+                        align: "center",
+                        action: {
+                          type: "message",
+                          label: "檢視全部",
+                          text: "檢視全部眼妝",
+                        },
+                        size: "md",
+                      },
+                    ],
+                    spacing: "lg",
+                    margin: "lg",
+                  },
+                ],
+              },
+            },
+            {
+              type: "bubble",
+              size: "kilo",
+              direction: "ltr",
+              hero: {
+                type: "image",
+                url:
+                  "https://www.lancome.com.tw/dw/image/v2/AAWH_PRD/on/demandware.static/-/Sites-lancome-master-catalog/default/dwb771c1a8/images/PACKSHOTS/MAKEUP/LIPS/ABSOLU_ROUGE/A01683-LAC_ABSOLU_ROUGE_CREAM/3614272653085_ABSOLU_ROUGE_CREAM_138_RAGING_RED_RUBY.jpg?sw=1000&sh=1000&sm=fit",
+                size: "full",
+                aspectMode: "cover",
+                aspectRatio: "320:213",
+              },
+              body: {
+                type: "box",
+                layout: "vertical",
+                contents: [
+                  {
+                    type: "box",
+                    layout: "vertical",
+                    contents: [
+                      {
+                        type: "text",
+                        text: "唇彩",
+                        weight: "bold",
+                        size: "sm",
+                        wrap: true,
+                        color: "#FFFFFF",
+                      },
+                      {
+                        type: "text",
+                        text: "請選擇想要的唇彩產品：",
+                        size: "xs",
+                        wrap: true,
+                        color: "#FFFFFF",
+                      },
+                    ],
+                    backgroundColor: "#D51B51",
+                    spacing: "sm",
+                    paddingAll: "10px",
+                  },
+                  {
+                    type: "box",
+                    layout: "vertical",
+                    contents: [
+                      {
+                        type: "text",
+                        text: "唇膏/口紅",
+                        align: "center",
+                        action: {
+                          type: "message",
+                          label: "唇膏/口紅",
+                          text: "唇膏/口紅",
+                        },
+                        size: "md",
+                      },
+                      {
+                        type: "text",
+                        text: "唇萃/唇露/唇蜜/唇釉系列",
+                        action: {
+                          type: "message",
+                          label: "唇萃/唇露/唇蜜/唇釉系列",
+                          text: "唇萃/唇露/唇蜜/唇釉系列",
+                        },
+                        align: "center",
+                        size: "md",
+                      },
+                      {
+                        type: "text",
+                        text: "檢視全部唇彩",
+                        action: {
+                          type: "message",
+                          label: "檢視全部",
+                          text: "檢視全部唇彩",
+                        },
+                        align: "center",
+                        size: "md",
+                      },
+                    ],
+                    spacing: "lg",
+                    margin: "lg",
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      });
+
     default:
       console.log(`Echo message to ${replyToken}: ${message.text}`);
       const echo = {
