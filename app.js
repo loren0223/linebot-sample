@@ -11,7 +11,6 @@ const app = express();
 
 // mount linebot middleware
 app.use("/line/callback", lineRouter);
-//
 
 // listen on port
 const port = process.env.PORT || 3000;
