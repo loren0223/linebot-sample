@@ -1405,6 +1405,1134 @@ async function handleText(message, replyToken, source) {
         },
       });
 
+    case '精華液':
+      return client.replyMessage(replyToken, {
+        type: 'flex',
+        altText: '精華液',
+        contents: {
+          type: 'carousel',
+          contents: [
+            {
+              type: 'bubble',
+              hero: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'image',
+                    url:
+                      'https://www.lancome.com.tw/dw/image/v2/AAWH_PRD/on/demandware.static/-/Sites-lancome-master-catalog/zh_TW/dw359c4a9d/images/PACKSHOTS/SKINCARE/A01819-LAC/3614272520622_Clarifique_Dual_Essence_150ml.jpg?sw=1000&sh=1000&sm=fit',
+                    gravity: 'top',
+                    size: '4xl',
+                    aspectRatio: '3:4',
+                    aspectMode: 'cover',
+                  },
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'text',
+                        text: 'New',
+                        color: '#ffffff',
+                        align: 'center',
+                        size: 'xs',
+                        offsetTop: '3px',
+                      },
+                    ],
+                    position: 'absolute',
+                    cornerRadius: '20px',
+                    offsetTop: '18px',
+                    backgroundColor: '#ff334b',
+                    offsetStart: '18px',
+                    height: '25px',
+                    width: '53px',
+                  },
+                ],
+              },
+              body: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'text',
+                            text: '超極光活粹晶露',
+                            size: 'xl',
+                            color: '#ffffff',
+                            weight: 'bold',
+                          },
+                          {
+                            type: 'text',
+                            text: 'CLARIFIQUE REFINING ENZYMATIC DUAL ESSENCE',
+                            size: 'xxs',
+                            color: '#FFFFFF',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'text',
+                            text:
+                              '超越水精華！最強極光水！ \n超保濕 極淨亮 更發光 \n全新極光水！特殊雙層活酵質地，完美調和精油與極光精華 \n立即保濕、活化並穩定肌膚，改善肌膚粗糙、黯沉等問題， \n使肌膚快速淨、透、亮，散發健康光澤。',
+                            size: 'xxs',
+                            color: '#FFFFFF',
+                            wrap: true,
+                            maxLines: 4,
+                          },
+                        ],
+                        paddingTop: '10px',
+                        paddingBottom: '10px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '產品介紹',
+                                color: '#ffffff',
+                                flex: 0,
+                                action: {
+                                  type: 'uri',
+                                  label: 'action',
+                                  uri:
+                                    'https://www.lancome.com.tw/%E4%BF%9D%E9%A4%8A/%E8%87%89%E9%83%A8%E4%BF%9D%E9%A4%8A/%E7%B2%BE%E8%8F%AF%E6%B6%B2/A01819-LAC.html#start=1&cgid=L3_Axe_Skincare_The_Serums',
+                                },
+                                offsetTop: '-2px',
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '線上購買',
+                                color: '#ffffff',
+                                flex: 0,
+                                offsetTop: '-2px',
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '回到產品分類',
+                                color: '#ffffff',
+                                flex: 0,
+                                offsetTop: '-2px',
+                                action: {
+                                  type: 'message',
+                                  label: '保養產品',
+                                  text: '保養產品',
+                                },
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                    ],
+                    offsetBottom: '0px',
+                    offsetStart: '0px',
+                    offsetEnd: '0px',
+                    paddingAll: '20px',
+                    paddingTop: '18px',
+                  },
+                ],
+                paddingAll: '0px',
+                offsetEnd: '0px',
+              },
+              styles: {
+                body: {
+                  backgroundColor: '#03303Acc',
+                },
+              },
+            },
+            {
+              type: 'bubble',
+              hero: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'image',
+                    url:
+                      'https://www.lancome.com.tw/dw/image/v2/AAWH_PRD/on/demandware.static/-/Sites-lancome-master-catalog/default/dwc00d4227/images/PACKSHOTS/SKINCARE/ABSOLUE/A01686-LAC/3614272623545_advanced_genifique_inter_30ml_alt1.jpg?sw=1000&sh=1000&sm=fit',
+                    gravity: 'top',
+                    size: '4xl',
+                    aspectRatio: '3:4',
+                    aspectMode: 'cover',
+                  },
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'text',
+                        text: 'New',
+                        color: '#ffffff',
+                        align: 'center',
+                        size: 'xs',
+                        offsetTop: '3px',
+                      },
+                    ],
+                    position: 'absolute',
+                    cornerRadius: '20px',
+                    offsetTop: '18px',
+                    backgroundColor: '#ff334b',
+                    offsetStart: '18px',
+                    height: '25px',
+                    width: '53px',
+                  },
+                ],
+              },
+              body: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'text',
+                            text: '超未來肌因賦活露',
+                            size: 'xl',
+                            color: '#ffffff',
+                            weight: 'bold',
+                          },
+                          {
+                            type: 'text',
+                            text: 'ADVANCED GENIFIQUE SERUM',
+                            size: 'xxs',
+                            color: '#FFFFFF',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'text',
+                            text:
+                              '全新小黑瓶 未來精華！肌膚好水嫩、更透亮、超彈潤 \n1. 顛覆皮膚保養新革命，全新未來精華，超強大高效修護效果 \n2. 獨家「微生態科技」，開啟肌膚微生態保養，找到肌膚另一半，抗老緊緻，一次到位，激活年輕！ \n3. 一滴3000萬活性粹取，光速修護肌膚，讓妳摸的到水嫩、看的見透亮、肌膚更Q彈！',
+                            size: 'xxs',
+                            color: '#FFFFFF',
+                            wrap: true,
+                            maxLines: 4,
+                          },
+                        ],
+                        paddingTop: '10px',
+                        paddingBottom: '10px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '產品介紹',
+                                color: '#ffffff',
+                                flex: 0,
+                                action: {
+                                  type: 'uri',
+                                  label: 'action',
+                                  uri:
+                                    'https://www.lancome.com.tw/%E4%BF%9D%E9%A4%8A/%E8%87%89%E9%83%A8%E4%BF%9D%E9%A4%8A/%E7%B2%BE%E8%8F%AF%E6%B6%B2/26901c-LAC.html#start=2&cgid=L3_Axe_Skincare_The_Serums',
+                                },
+                                offsetTop: '-2px',
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '線上購買',
+                                color: '#ffffff',
+                                flex: 0,
+                                offsetTop: '-2px',
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '回到產品分類',
+                                color: '#ffffff',
+                                flex: 0,
+                                offsetTop: '-2px',
+                                action: {
+                                  type: 'message',
+                                  label: '保養產品',
+                                  text: '保養產品',
+                                },
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                    ],
+                    offsetBottom: '0px',
+                    offsetStart: '0px',
+                    offsetEnd: '0px',
+                    paddingAll: '20px',
+                    paddingTop: '18px',
+                  },
+                ],
+                paddingAll: '0px',
+              },
+              styles: {
+                body: {
+                  backgroundColor: '#03303Acc',
+                },
+              },
+            },
+            {
+              type: 'bubble',
+              hero: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'image',
+                    url:
+                      'https://www.lancome.com.tw/dw/image/v2/AAWH_PRD/on/demandware.static/-/Sites-lancome-master-catalog/default/dw4d4bb1c4/images/PACKSHOTS/SKINCARE/GENIFIQUE/Genifique_Sensitive/3614271678447_GENIFIQUE_SENSITIVE_XL.jpg?sw=1000&sh=1000&sm=fit',
+                    gravity: 'top',
+                    size: '4xl',
+                    aspectRatio: '3:4',
+                    aspectMode: 'cover',
+                  },
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'text',
+                        text: 'New',
+                        color: '#ffffff',
+                        align: 'center',
+                        size: 'xs',
+                        offsetTop: '3px',
+                      },
+                    ],
+                    position: 'absolute',
+                    cornerRadius: '20px',
+                    offsetTop: '18px',
+                    backgroundColor: '#ff334b',
+                    offsetStart: '18px',
+                    height: '25px',
+                    width: '53px',
+                  },
+                ],
+              },
+              body: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'text',
+                            text: '超進化肌因活性安瓶',
+                            size: 'xl',
+                            color: '#ffffff',
+                            weight: 'bold',
+                          },
+                          {
+                            type: 'text',
+                            text: 'GENIFIQUE SENSITIVE',
+                            size: 'xxs',
+                            color: '#FFFFFF',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'text',
+                            text:
+                              '超進化肌因活性安瓶(小黑安瓶)擁有蘭蔻獨家超高效「肌底修護活性配方」 \n富含98%超高純度活性成份，結合「原菌活淬、釀酒酵母及雷特氏B菌」3種活性酵母 \n日夜間保養只要1滴精華液，極速強效修護肌底，減緩皮膚老化與淡化細紋。 \n肌膚不只穩定，更立即摸得到彈嫩、年輕！',
+                            size: 'xxs',
+                            color: '#FFFFFF',
+                            wrap: true,
+                            maxLines: 4,
+                          },
+                        ],
+                        paddingTop: '10px',
+                        paddingBottom: '10px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '產品介紹',
+                                color: '#ffffff',
+                                flex: 0,
+                                action: {
+                                  type: 'uri',
+                                  label: 'action',
+                                  uri:
+                                    'https://www.lancome.com.tw/%E4%BF%9D%E9%A4%8A/%E7%94%A2%E5%93%81%E7%B3%BB%E5%88%97/%E8%B6%85%E6%9C%AA%E4%BE%86%E8%82%8C%E5%9B%A0%E8%B3%A6%E6%B4%BB%E7%B3%BB%E5%88%97/A00798-LAC.html#start=3&cgid=L3_Axe_Skincare_The_Serums',
+                                },
+                                offsetTop: '-2px',
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '線上購買',
+                                color: '#ffffff',
+                                flex: 0,
+                                offsetTop: '-2px',
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '回到產品分類',
+                                color: '#ffffff',
+                                flex: 0,
+                                offsetTop: '-2px',
+                                action: {
+                                  type: 'message',
+                                  label: '保養產品',
+                                  text: '保養產品',
+                                },
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                    ],
+                    offsetBottom: '0px',
+                    offsetStart: '0px',
+                    offsetEnd: '0px',
+                    paddingAll: '20px',
+                    paddingTop: '18px',
+                  },
+                ],
+                paddingAll: '0px',
+              },
+              styles: {
+                body: {
+                  backgroundColor: '#03303Acc',
+                },
+              },
+            },
+            {
+              type: 'bubble',
+              hero: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'image',
+                    url:
+                      'https://www.lancome.com.tw/dw/image/v2/AAWH_PRD/on/demandware.static/-/Sites-lancome-master-catalog/zh_TW/dw25600ada/images/PACKSHOTS/SKINCARE/RENERGIE/A01099-LAC/A01099-LAC.jpg?sw=1000&sh=1000&sm=fit',
+                    gravity: 'top',
+                    size: '4xl',
+                    aspectRatio: '3:4',
+                    aspectMode: 'cover',
+                  },
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'text',
+                        text: 'New',
+                        color: '#ffffff',
+                        align: 'center',
+                        size: 'xs',
+                        offsetTop: '3px',
+                      },
+                    ],
+                    position: 'absolute',
+                    cornerRadius: '20px',
+                    offsetTop: '18px',
+                    backgroundColor: '#ff334b',
+                    offsetStart: '18px',
+                    height: '25px',
+                    width: '53px',
+                  },
+                ],
+              },
+              body: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'text',
+                            text: '超緊顏全面修復密集精華',
+                            size: 'xl',
+                            color: '#ffffff',
+                            weight: 'bold',
+                          },
+                          {
+                            type: 'text',
+                            text:
+                              'RÉNERGIE MULTI-CICA™ SOOTHING GEL - SEVEN SINGLE DOSES',
+                            size: 'xxs',
+                            color: '#FFFFFF',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'text',
+                            text:
+                              '內含高效修復成分「維生素原B5」和蘭蔻核心抗老科技「太空抗引力高效科技」，更有高濃度的「玻尿酸和甘油」，提供肌膚完整保濕，有效舒緩肌膚不適症狀，跟乾癢、粗糙、起屑說再見!',
+                            size: 'xxs',
+                            color: '#FFFFFF',
+                            wrap: true,
+                            maxLines: 4,
+                          },
+                        ],
+                        paddingTop: '10px',
+                        paddingBottom: '10px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '產品介紹',
+                                color: '#ffffff',
+                                flex: 0,
+                                action: {
+                                  type: 'uri',
+                                  label: 'action',
+                                  uri:
+                                    'https://www.lancome.com.tw/%E4%BF%9D%E9%A4%8A/%E8%87%89%E9%83%A8%E4%BF%9D%E9%A4%8A/%E7%B2%BE%E8%8F%AF%E6%B6%B2/A01099-LAC.html#start=4&cgid=L3_Axe_Skincare_The_Serums',
+                                },
+                                offsetTop: '-2px',
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '線上購買',
+                                color: '#ffffff',
+                                flex: 0,
+                                offsetTop: '-2px',
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '回到產品分類',
+                                color: '#ffffff',
+                                flex: 0,
+                                offsetTop: '-2px',
+                                action: {
+                                  type: 'message',
+                                  label: '保養產品',
+                                  text: '保養產品',
+                                },
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                    ],
+                    offsetBottom: '0px',
+                    offsetStart: '0px',
+                    offsetEnd: '0px',
+                    paddingAll: '20px',
+                    paddingTop: '18px',
+                  },
+                ],
+                paddingAll: '0px',
+              },
+              styles: {
+                body: {
+                  backgroundColor: '#03303Acc',
+                },
+              },
+            },
+            {
+              type: 'bubble',
+              hero: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'image',
+                    url:
+                      'https://www.lancome.com.tw/dw/image/v2/AAWH_PRD/on/demandware.static/-/Sites-lancome-master-catalog/zh_TW/dw97b53e69/images/PACKSHOTS/SKINCARE/RENERGIE/A00353_Renergie_Multi_Lift_Full_Spectrum/3614271690395_RML_FULL_SPECTRUM_50ML.jpg?sw=1000&sh=1000&sm=fit',
+                    gravity: 'top',
+                    size: '4xl',
+                    aspectRatio: '3:4',
+                    aspectMode: 'cover',
+                  },
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'text',
+                        text: 'New',
+                        color: '#ffffff',
+                        align: 'center',
+                        size: 'xs',
+                        offsetTop: '3px',
+                      },
+                    ],
+                    position: 'absolute',
+                    cornerRadius: '20px',
+                    offsetTop: '18px',
+                    backgroundColor: '#ff334b',
+                    offsetStart: '18px',
+                    height: '25px',
+                    width: '53px',
+                  },
+                ],
+              },
+              body: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'text',
+                            text: '超緊顏白金淡斑精粹',
+                            size: 'xl',
+                            color: '#ffffff',
+                            weight: 'bold',
+                          },
+                          {
+                            type: 'text',
+                            text: 'RENERGIE FULL SPECTRUM SERUM',
+                            size: 'xxs',
+                            color: '#FFFFFF',
+                          },
+                        ],
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'text',
+                            text:
+                              '【全面緊緻膨彈 對抗熟齡斑點】 \n蘭蔻超緊顏白金 淡斑精粹，抗老保養品的極致雙重科技，淡斑 x 緊緻 x 抗痕 一瓶到位。 \n1.太空抗引力超效科技，提拉輪廓、全臉緊緻、還原立體臉型 \n2.白金祛斑科技，調節黑色素，斑點變少變小變淡',
+                            size: 'xxs',
+                            color: '#FFFFFF',
+                            wrap: true,
+                            maxLines: 4,
+                          },
+                        ],
+                        paddingTop: '10px',
+                        paddingBottom: '10px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '產品介紹',
+                                color: '#ffffff',
+                                flex: 0,
+                                action: {
+                                  type: 'uri',
+                                  label: 'action',
+                                  uri:
+                                    'https://www.lancome.com.tw/%E4%BF%9D%E9%A4%8A/%E7%94%A2%E5%93%81%E7%B3%BB%E5%88%97/%E8%B6%85%E7%B7%8A%E9%A1%8F%E7%99%BD%E9%87%91%E7%B3%BB%E5%88%97/A00353-LAC.html#start=5&cgid=L3_Axe_Skincare_The_Serums',
+                                },
+                                offsetTop: '-2px',
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '線上購買',
+                                color: '#ffffff',
+                                flex: 0,
+                                offsetTop: '-2px',
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                      {
+                        type: 'box',
+                        layout: 'vertical',
+                        contents: [
+                          {
+                            type: 'filler',
+                          },
+                          {
+                            type: 'box',
+                            layout: 'baseline',
+                            contents: [
+                              {
+                                type: 'filler',
+                              },
+                              {
+                                type: 'text',
+                                text: '回到產品分類',
+                                color: '#ffffff',
+                                flex: 0,
+                                offsetTop: '-2px',
+                                action: {
+                                  type: 'message',
+                                  label: '保養產品',
+                                  text: '保養產品',
+                                },
+                              },
+                              {
+                                type: 'filler',
+                              },
+                            ],
+                            spacing: 'sm',
+                          },
+                          {
+                            type: 'filler',
+                          },
+                        ],
+                        borderWidth: '1px',
+                        cornerRadius: '4px',
+                        spacing: 'sm',
+                        borderColor: '#ffffff',
+                        margin: 'sm',
+                        height: '40px',
+                      },
+                    ],
+                    offsetBottom: '0px',
+                    offsetStart: '0px',
+                    offsetEnd: '0px',
+                    paddingAll: '20px',
+                    paddingTop: '18px',
+                  },
+                ],
+                paddingAll: '0px',
+              },
+              styles: {
+                body: {
+                  backgroundColor: '#03303Acc',
+                },
+              },
+            },
+          ],
+        },
+      });
+
     case '彩妝產品':
       return client.replyMessage(replyToken, {
         type: 'flex',
